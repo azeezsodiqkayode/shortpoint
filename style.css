@@ -1,0 +1,81 @@
+.container {
+  background-color: #f8f8ff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+progress {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 15px 0 0 0;
+  margin: 0;
+  background: none;
+  border: 0px;
+  border-radius: 50px;
+  text-align: left;
+  position: relative;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-size: 15px;
+}
+
+progress::-webkit-progress-bar {
+  height: 40px;
+  width: 80%;
+  padding-left: 0px;
+  margin: 0 auto;
+  background-color: #dadada;
+  border-radius: 100px;
+  border: 0.5px solid lightgrey;
+}
+progress::-webkit-progress-value {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin: 0px -10px 0 0;
+  padding-left: 50px; /* Rounded corners requires a padding */
+  background: #ff9e2c;
+  border-radius: 100px;
+}
+progress.progress1::-webkit-progress-value {
+  background: #b2db73;
+}
+progress.progress2::-webkit-progress-value {
+  background: #ed8073;
+}
+progress.progress3::-webkit-progress-value {
+  background: #fefefe;
+}
+
+progress.progress4::-webkit-progress-value {
+  background: #a5d7fa;
+}
+progress.progress5::-webkit-progress-value {
+  background: #fad570;
+}
+
+progress:after {
+  margin: -25px 0 0 -32px;
+  padding: 0;
+  display: inline-block; /* Here is the magic to move with the progress */
+  float: left;
+  content: attr(value) "%";
+  color: #555;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 200px;
+  font-size: 16px;
+  border-radius: 4px;
+}

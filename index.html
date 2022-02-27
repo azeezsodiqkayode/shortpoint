@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Create 5 progress bars -->
+        <div class=" wrapper w3-light-grey">
+            <progress class = "progress1 myBar" max="100" value="50"> 50% </progress>
+            <progress class = "progress2 myBar" max="100" value="50"> 50% </progress>
+            <progress class = "progress3 myBar" max="100" value="50"> 50% </progress>
+            <progress class = "progress4 myBar" max="100" value="50"> 50% </progress>
+            <progress class = "progress5 myBar" max="100" value="50"> 50% </progress>
+            
+        </div>
+        <br>  
+    </div>
+    <!-- Adding buttons to progress the bars and also to reset it back to default 50% -->
+    <button class="button " onclick="move()">Click Me</button> 
+    <button class="button " onclick="reset()">Reset</button> 
+        <!-- Linking the html to the javascript to perform the onclick action -->
+        <script src="./index.js"></script>
+       
+</body>
+</html>

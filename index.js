@@ -1,5 +1,7 @@
 function move() {
-    let elements = document.querySelectorAll(".myBar");   
+    // Read all progress bar with the class myBar
+    let elements = document.querySelectorAll(".myBar");  
+    // set interval of progress bar movement  
     let id = setInterval(frame, 10);
     function frame(elem) {
      for(elem of elements){
@@ -13,7 +15,8 @@ function move() {
    }
   }
 
-
+  
+// function that reset the progress bar back to default 50%
 function reset(){
     let elements = document.querySelectorAll(".myBar");   
      for(elem of elements){
